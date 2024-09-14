@@ -59,6 +59,19 @@
 
         totalVenta = venta1 + venta2 + venta3;
 
+        //Calculo promedio de comisiones:
+
+        promedioComisiones = totalComisiones / 3;
+
+        //Validar si el vendedor recibe el beneficio extra.
+
+        bool recibeBeneficio = totalVenta >= objetivo;
+
+        //Validar venta de mayor comision.
+
+
+
+
 
 
 
