@@ -27,8 +27,19 @@ public class Program
 
         //Calcular y mostrar la solucion.
         if (a == 0)
-        { 
+        {
             if (b == 0)
+            {
+                Console.WriteLine("Todos los numeros son solucion ");
+            }
+            else
+            {
+                Console.WriteLine("La ecuacion no tiene solucion");
+            }
+
+        {    
+
+
 
 
 
