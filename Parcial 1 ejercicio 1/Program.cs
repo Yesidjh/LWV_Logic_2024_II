@@ -20,7 +20,7 @@
         double venta1, venta2, venta3;
         double comision1, comision2, comision3;
         double promedioComisiones;
-        double totalComisiones;
+        double totalComisiones, totalDevengado;
         double totalVentas;
         double objetivo = 1000000;
         double beneficioExtra = 100000;
@@ -44,8 +44,21 @@
         //Calculo de comision:
 
         comision1 = venta1 * 0.10;
-        comision1 = venta2 * 0.10;
-        comision1 = venta3 * 0.10;
+        comision2 = venta2 * 0.10;
+        comision3 = venta3 * 0.10;
+
+        //Calculo total comisiones.
+
+        totalComisiones = comision1 + comision2 + comision3;
+
+        //Calcular total devengado mes.
+
+        totalDevengado = sueldoBase + totalComisiones;
+
+        //Calculo tontal de ventas.
+
+        totalVenta = venta1 + venta2 + venta3;
+
 
 
 
