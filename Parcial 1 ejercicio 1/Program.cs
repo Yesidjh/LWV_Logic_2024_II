@@ -1,9 +1,11 @@
-﻿internal class Program
+﻿using System.Text.RegularExpressions;
+
+internal class Program
 
 {
     private static double sueldoBase;
 
-    private static void Main(string[] args)
+    private static void Main(string[] args, object ConsoleConsole)
 
 
     {
@@ -26,12 +28,12 @@
         double beneficioExtra = 100000;
         double totalVenta;
 
-      
+
 
 
         Console.WriteLine("Ingrese slario base del vendedor");
         sueldoBase = Convert.ToDouble(Console.ReadLine());
-  
+
         Console.WriteLine("Ingrese valor de la primera venta");
         venta1 = Convert.ToDouble(Console.ReadLine());
 
@@ -69,14 +71,29 @@
 
         //Validar venta de mayor comision.
 
+        double mayorComision = Math.Max(comision1, Math.Max(comision2, comision3));
 
 
+        //Resultados en pantalla.
+        Console.WriteLine("Resultado del mes");
+        Console.WriteLine($"Comisiones totales");
+        Console.WriteLine($"Salario total");
+        Console.WriteLine($"Comision mayor");
+        Console.WriteLine("Promedio comisiones");
+
+        if (recibeBeneficio)
+
+        {
+            Console.WriteLine("Felicidades, alcanzaste el objetivo");
+        }
+        else
+        {
+            Console.WriteLine("Que pena, no alcanzaste el objetivo");
 
 
+        }
 
-
-
-
+   
 
 
     }
