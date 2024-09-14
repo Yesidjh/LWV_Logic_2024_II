@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-internal class Program
+public class Program
 
 {
     private static double sueldoBase;
