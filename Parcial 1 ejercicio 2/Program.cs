@@ -42,7 +42,7 @@ public class Program
         else
         {
             double x = -b / a;
-            Console.WriteLine("La soluccion de la ecuacion es x = {x}");
+            Console.WriteLine($"La soluccion de la ecuacion es x = {x}");
         }
     }
 }
