@@ -1,4 +1,5 @@
-﻿using System.Text.RegularExpressions;
+﻿using System.ComponentModel.Design;
+using System.Text.RegularExpressions;
 
 public class Program
 
@@ -37,7 +38,16 @@ public class Program
                 Console.WriteLine("La ecuacion no tiene solucion");
             }
 
-        {    
+        }
+        else
+        {
+            double x = -b / a;
+            Console.WriteLine("La soluccion de la ecuacion es x = {x}");
+        }
+    }
+}
+
+
 
 
 
