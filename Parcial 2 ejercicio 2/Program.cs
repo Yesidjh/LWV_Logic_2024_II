@@ -57,6 +57,10 @@ public class Program
             return "Sobresaliente";
         else if (promedio >= 3.5)
             return "Bueno";
+        else
+            return "Insuficiente";
+    }
+}
 
 
 
