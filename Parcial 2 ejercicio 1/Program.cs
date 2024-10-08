@@ -1,4 +1,5 @@
-﻿using static System.Formats.Asn1.AsnWriter;
+﻿using System.Reflection;
+using static System.Formats.Asn1.AsnWriter;
 
 public class Program
 { 
@@ -17,8 +18,12 @@ public class Program
         //Numero de jugadores
         int jugadores;
         do
-        { 
-            Console.WriteLine
+        {
+            Console.WriteLine("Por favor ingresa el numero de jugadores (Entre 2 y 4 jugadores)");
+            while (jugadores < 2 || jugadores > 4)
+            { }
+        }if (int.TryParse(console.Redline(), out jugadores) && jugadores >=2 && jugadores <=4)
+
 
 
 
