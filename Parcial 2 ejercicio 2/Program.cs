@@ -19,7 +19,12 @@ public class Program
             Console.Write("Porfavor ingresa la cantidad de estudinates");
             int cantidadEstudiantes = int.Parse(Console.ReadLine());
 
-            fot
+            for (int i =0; i < cantidadEstudiantes; i++)
+
+            {
+
+                Console.Write($"Ingresa la nota del estudiante")
+            }
 
 
         
