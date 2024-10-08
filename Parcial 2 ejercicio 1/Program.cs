@@ -21,12 +21,12 @@ public class Program
 
         //Numero de jugadores
 
-       
-            bool jugar 
+
+        bool jugarnuevamente;
             do
 
-        { jugar nuevamente = fasle;
-            int jugadores = 0;
+        { jugarnuevamente = fasle;
+            int jugadores = 0; 
 
 
             //Seleccionar jugador
@@ -87,7 +87,14 @@ public class Program
 
             //Preguntar si quiere jugar nuevamente
             (Console.WriteLine("¿Quiere volver a jugar? (s/n)");
-            if
+
+            if (Console.ReadLine().ToLower() == "s")
+
+            {
+                jugarnuevamente = true;
+
+
+
 
 
 
