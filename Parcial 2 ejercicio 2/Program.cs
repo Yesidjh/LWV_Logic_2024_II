@@ -2,7 +2,7 @@
 
 public class Program
 
-{ 
+{
 
     private static void Main(string[] args)
 
@@ -28,6 +28,23 @@ public class Program
                 notas.Add(nota);
 
             }
+
+            double promedio = CalcularPromedio(notas);
+            string categoria = ClasificarDesenpeno(promedio);
+
+            Console.WriteLine("El promedio del gurpo es: {promedio:F2} - Categoria: {categoria}");
+            Console.WriteLine("¿Quiere ingresar grupo de estudiantes? (s/n): ");
+            continuar = Console.ReadLine().ToLower(),
+
+               } while (continuar == "s");
+    }
+
+    static
+
+
+
+
+}
 
 
 
