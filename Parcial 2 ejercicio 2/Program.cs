@@ -35,7 +35,7 @@ public class Program
 
             Console.WriteLine("El promedio del gurpo es: {promedio:F2} - Categoria: {categoria}");
             Console.WriteLine("¿Quiere ingresar grupo de estudiantes? (s/n): ");
-            continuar = Console.ReadLine().ToLower(),
+            continuar = Console.ReadLine().ToLower();
 
                } while (continuar == "s");
     }
@@ -47,7 +47,7 @@ public class Program
         {
             suma += nota;
         }
-        return / notas.Count;
+        return suma / notas.Count;
     }
     static string ClasificarDesempeno(double promedio)
     {
@@ -68,7 +68,7 @@ public class Program
 
 
 
-}
+
 
 
 
