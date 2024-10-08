@@ -49,7 +49,8 @@ public class Program
         }
         return / notas.Count;
     }
-    static
+    static string ClasificarDesempeno(double promedio)
+
 
 
 
