@@ -24,10 +24,11 @@ public class Program
 
 
         bool jugarnuevamente;
+
         do
 
         {
-            jugarnuevamente = fasle;
+            jugarnuevamente = false;
             int jugadores = 0;
 
 
@@ -87,8 +88,9 @@ public class Program
             }
 
 
-        //Preguntar si quiere jugar nuevamente
-        (Console.WriteLine("¿Quiere volver a jugar? (s/n)");
+            //Preguntar si quiere jugar nuevamente
+            Console.WriteLine("¿Quieren jugar de nuevo? (s/n)");
+
 
             if (Console.ReadLine().ToLower() == "s")
 
