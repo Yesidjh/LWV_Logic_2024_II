@@ -3,6 +3,7 @@
 public class Program
 
 {
+    private static string continuar;
 
     private static void Main(string[] args)
 
@@ -39,6 +40,15 @@ public class Program
                } while (continuar == "s");
     }
 
+    static double CalcularPromedio(List<double> notas)
+    {
+        double suma = 0;
+        foreach (var nota in notas)
+        {
+            suma += nota;
+        }
+        return / notas.Count;
+    }
     static
 
 
