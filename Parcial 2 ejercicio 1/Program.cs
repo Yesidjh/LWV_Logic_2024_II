@@ -4,8 +4,9 @@ using static System.Formats.Asn1.AsnWriter;
 
 public class Program
 {
-    private static de fasle;
+    
     private static int numeroAleatorio;
+    private static bool fasle;
 
     private static void Main(string[] args)
     {
@@ -103,6 +104,11 @@ public class Program
 
     }
 
+    private static int NumeroAleatorio(int jugadores)
+    {
+        throw new NotImplementedException();
+    }
+
     static int GenerarNumeroAleatorio(int jugadores)
     {
         Random random = new Random();
@@ -110,8 +116,22 @@ public class Program
     }
 
     static int GetMaximo(int jugadores)
-    { 
+    {
         switch (jugadores)
+        {
+            case 2:
+                return 50;
+            case3:
+                return 100;
+            case 4:
+                return 200;
+            default:
+                return 0;
+        }
+    }
+}
+
+
 
 
 
