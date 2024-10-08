@@ -2,7 +2,9 @@
 using static System.Formats.Asn1.AsnWriter;
 
 public class Program
-{ 
+{
+    private static de fasle;
+
     private static void Main(string[] args)
     {
         //Adivina el número. Crear un programa que consiste en adivinar un número N aleatorio que el sistema escoge de un determinado rango y lo guarda enmemoria sin ser revelado.
@@ -18,12 +20,11 @@ public class Program
         //Numero de jugadores
 
        
-            bool jugar de nuevo;
-
+            bool jugar 
             do
 
-            { jugar de nuevo = fasle;
-                int jugadores = 0;
+        { jugar nuevamente = fasle;
+            int jugadores = 0;
 
 
             //Seleccionar jugador
@@ -31,7 +32,7 @@ public class Program
             while (jugadores < 2 || jugadores > 4)
             {
                 Console.WriteLine("Porfavor ingrese el numero de jugadores (entre 2 y 4 jugadotes):");
-                if (int.TryParse(console.Redline(), out jugadores) && jugadores >= 2 && jugadores <= 4)
+                if (int.TryParse(Console.ReadLine(), out jugadores) && jugadores >= 2 && jugadores <= 4)
 
                 {
                     break;
@@ -42,6 +43,19 @@ public class Program
 
             //Generar numero aleatorio segun nuemro de jugadores
 
+            int numeroAleaotorio = NumeroAleatorio(jugadores);
+
+            Console.WriteLine($"Se genero un numero entre 0 y {GetMaximo(jugadores)}.");
+
+            int jugadorActual = 0;
+            bool ganador = false;
+
+            while (!ganador)
+            {
+                Console.WriteLine($"{jugadorActual + 1}, ingresa un numero:");
+                int intento;
+      
+            
 
 
 
