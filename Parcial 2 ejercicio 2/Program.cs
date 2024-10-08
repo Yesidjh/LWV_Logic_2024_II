@@ -31,7 +31,7 @@ public class Program
             }
 
             double promedio = CalcularPromedio(notas);
-            string categoria = ClasificarDesenpeno(promedio);
+            string categoria = ClasificarDesempeno(promedio);
 
             Console.WriteLine("El promedio del gurpo es: {promedio:F2} - Categoria: {categoria}");
             Console.WriteLine("¿Quiere ingresar grupo de estudiantes? (s/n): ");
@@ -50,6 +50,10 @@ public class Program
         return / notas.Count;
     }
     static string ClasificarDesempeno(double promedio)
+    {
+        if (promedio >= 4.5)
+            return "Excelente";
+
 
 
 
