@@ -34,7 +34,7 @@ public class Program
             string categoria = ClasificarDesempeno(promedio);
 
             Console.WriteLine($"El promedio del gurpo es: {promedio:F2} - Categoria: {categoria}");
-            Console.WriteLine("¿Quiere ingresar grupo de estudiantes? (s/n): ");
+            Console.Write("¿Quiere ingresar grupo de estudiantes? (s/n): ");
             continuar = Console.ReadLine().ToLower();
 
                } while (continuar == "s");
