@@ -23,10 +23,11 @@ public class Program
 
 
         bool jugarnuevamente;
-            do
+        do
 
-        { jugarnuevamente = fasle;
-            int jugadores = 0; 
+        {
+            jugarnuevamente = fasle;
+            int jugadores = 0;
 
 
             //Seleccionar jugador
@@ -85,13 +86,28 @@ public class Program
             }
 
 
-            //Preguntar si quiere jugar nuevamente
-            (Console.WriteLine("¿Quiere volver a jugar? (s/n)");
+        //Preguntar si quiere jugar nuevamente
+        (Console.WriteLine("¿Quiere volver a jugar? (s/n)");
 
             if (Console.ReadLine().ToLower() == "s")
 
             {
                 jugarnuevamente = true;
+
+                //Limpiar consola para nueve partida
+
+                Console.Clear();
+            }
+
+        } while (jugarnuevamente);
+
+    }
+
+    static int GenerarNumeroAleatorio(int jugadores)
+    {
+        Random random = new Random();
+        return random.Next(0, GetMaximo(jugadores) + 1);
+    }
 
 
 
