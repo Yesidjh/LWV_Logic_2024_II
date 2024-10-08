@@ -106,9 +106,9 @@ public class Program
 
     }
 
-    private static int NumeroAleatorio(int jugadores)
+    static int GenerarNumeroAleatorio(int jugadores)
     {
-        throw new NotImplementedException();
+
     }
 
     static int GenerarNumeroAleatorio(int jugadores)
