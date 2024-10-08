@@ -16,13 +16,31 @@ public class Program
         //Si participan 4 jugadores, el número ℕ aleatorio se generará entre 0 y 200 
 
         //Numero de jugadores
-        int jugadores;
-        do
-        {
-            Console.WriteLine("Por favor ingresa el numero de jugadores (Entre 2 y 4 jugadores)");
+
+       
+            bool jugar de nuevo;
+
+            do
+
+            { jugar de nuevo = fasle;
+                int jugadores = 0;
+
+
+            //Seleccionar jugador
+
             while (jugadores < 2 || jugadores > 4)
-            { }
-        }if (int.TryParse(console.Redline(), out jugadores) && jugadores >=2 && jugadores <=4)
+            {
+                Console.WriteLine("Porfavor ingrese el numero de jugadores (entre 2 y 4 jugadotes):");
+                if (int.TryParse(console.Redline(), out jugadores) && jugadores >= 2 && jugadores <= 4)
+
+                {
+                    break;
+                }
+                Console.WriteLine("Numero incorrecto. Intente nuvamente");
+
+            }
+
+            //Generar numero aleatorio segun nuemro de jugadores
 
 
 
