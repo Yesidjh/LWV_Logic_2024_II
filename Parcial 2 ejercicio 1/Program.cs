@@ -109,6 +109,11 @@ public class Program
         return random.Next(0, GetMaximo(jugadores) + 1);
     }
 
+    static int GetMaximo(int jugadores)
+    { 
+        switch (jugadores)
+
+
 
 
 
