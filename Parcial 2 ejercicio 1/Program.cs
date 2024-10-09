@@ -73,6 +73,16 @@ public class Program
                 else if (intento < numeroSecreto)
                 {
                     Console.WriteLine("MAYOR");
+                }
+                else
+                {
+                    Console.WriteLine("¡HAS GANADO!");
+                    ganador = true;
+
+                }
+
+                //Cambio siguiente jugador
+
 
 
 
