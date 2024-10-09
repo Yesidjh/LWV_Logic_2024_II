@@ -26,6 +26,13 @@ public class Program
         do
         {
             int cantidadJugadores;
+            do
+            {
+                Console.Write("Ingrese el número de jugadores (2-4): ");
+                cantidadJugadores = int.Parse(Console.ReadLine());
+            } while (cantidadJugadores < 2 || cantidadJugadores > 4);
+
+            int numeroSecreto;
 
 
 
