@@ -59,6 +59,12 @@ public class Program
             int jugadorActual = 0;
             bool ganador = false;
 
+            while (!ganador)
+
+            {
+
+                Console.WriteLine($"Turno del jugador {jugadorActual + 1}. Ingrese su intento:");
+                int intento = int.Parse(Console.ReadLine());
 
 
 
