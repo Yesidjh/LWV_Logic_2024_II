@@ -69,6 +69,10 @@ public class Program
                 if (intento > numeroSecreto)
                 {
                     Console.WriteLine("MENOR");
+                }
+                else if (intento < numeroSecreto)
+                {
+                    Console.WriteLine("MAYOR");
 
 
 
