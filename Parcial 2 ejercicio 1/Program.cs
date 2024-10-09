@@ -89,6 +89,10 @@ public class Program
             //Preguntar si quieren jugar de nuevo
             Console.Write("¿Quieren jugar nuevamente? (s/n): ");
             jugarOtraVez = Console.ReadLine().ToLower() == "s";
+            Console.Clear(); // Limpiar consola
+        } while (jugarOtraVez);
+    }
+}
 
 
 
