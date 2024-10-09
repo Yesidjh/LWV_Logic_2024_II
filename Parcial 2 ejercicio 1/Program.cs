@@ -83,6 +83,13 @@ public class Program
 
                 //Cambio siguiente jugador
 
+                jugadorActual = (jugadorActual + 1) % cantidadJugadores;
+            }
+
+            //Preguntar si quieren jugar de nuevo
+            Console.Write("¿Quieren jugar nuevamente? (s/n): ");
+            jugarOtraVez = Console.ReadLine().ToLower() == "s";
+
 
 
 
