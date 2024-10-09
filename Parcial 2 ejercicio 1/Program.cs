@@ -33,6 +33,12 @@ public class Program
             } while (cantidadJugadores < 2 || cantidadJugadores > 4);
 
             int numeroSecreto;
+            switch (cantidadJugadores)
+            {
+                //Rango de 0 a 50
+                case 2:
+                    numeroSecreto = random.Next(0, 51); 
+                    break;
 
 
 
