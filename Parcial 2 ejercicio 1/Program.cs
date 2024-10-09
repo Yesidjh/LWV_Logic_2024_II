@@ -66,6 +66,10 @@ public class Program
                 Console.WriteLine($"Turno del jugador {jugadorActual + 1}. Ingrese su intento:");
                 int intento = int.Parse(Console.ReadLine());
 
+                if (intento > numeroSecreto)
+                {
+                    Console.WriteLine("MENOR");
+
 
 
 
