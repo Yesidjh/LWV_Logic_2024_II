@@ -37,22 +37,28 @@ public class Program
             {
                 //Rango de 0 a 50
                 case 2:
-                    numeroSecreto = random.Next(0, 51); 
+                    numeroSecreto = random.Next(0, 51);
                     break;
 
                 // Rango de 0 a 100
                 case 3:
-                    numeroSecreto = random.Next(0, 101); 
+                    numeroSecreto = random.Next(0, 101);
                     break;
 
                 // Rango de 0 a 200
                 case 4:
-                    numeroSecreto = random.Next(0, 201); 
+                    numeroSecreto = random.Next(0, 201);
                     break;
 
                 default:
-                    numeroSecreto = 0; 
+                    numeroSecreto = 0;
                     break;
+
+            }
+
+            int jugadorActual = 0;
+            bool ganador = false;
+
 
 
 
