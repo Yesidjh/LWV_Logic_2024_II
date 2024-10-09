@@ -40,6 +40,10 @@ public class Program
                     numeroSecreto = random.Next(0, 51); 
                     break;
 
+                // Rango de 0 a 100
+                case 3:
+                    numeroSecreto = random.Next(0, 101); 
+                    break;
 
 
 
